@@ -177,7 +177,7 @@ class FetchJeepTest extends FetchJeepTestSupport {
       // When: a connection is made to the URI
 
       ResponseEntity<Map<String, Object>> response =
-          restTemplate.exchange(uri, HttpMethod.GET, null, new ParameterizedTypeReference<>() {});
+          getRestTemplate().exchange(uri, HttpMethod.GET, null, new ParameterizedTypeReference<>() {});
 
       // Then: a internal server error (500) status is returned
 
