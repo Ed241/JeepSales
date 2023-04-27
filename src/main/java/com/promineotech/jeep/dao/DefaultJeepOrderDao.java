@@ -29,7 +29,6 @@ import com.promineotech.jeep.entity.JeepModel;
 import com.promineotech.jeep.entity.Option;
 import com.promineotech.jeep.entity.OptionType;
 import com.promineotech.jeep.entity.Order;
-import com.promineotech.jeep.entity.OrderRequest;
 import com.promineotech.jeep.entity.Tire;
 
 

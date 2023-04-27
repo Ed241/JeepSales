@@ -13,8 +13,6 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.context.request.ServletWebRequest;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
-import com.mysql.cj.log.Log;
-import ch.qos.logback.core.status.StatusBase;
 import lombok.extern.slf4j.Slf4j;
 
 @RestControllerAdvice

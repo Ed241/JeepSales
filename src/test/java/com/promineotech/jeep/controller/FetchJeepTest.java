@@ -7,7 +7,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Stream;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -20,16 +19,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.boot.test.web.client.TestRestTemplate;
-import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.context.jdbc.SqlConfig;
-import org.springframework.test.jdbc.JdbcTestUtils;
 import com.promineotech.jeep.Constants;
 import com.promineotech.jeep.controller.support.FetchJeepTestSupport;
 import com.promineotech.jeep.entity.Jeep;
@@ -51,8 +47,7 @@ class FetchJeepTest extends FetchJeepTestSupport {
     @Autowired
     private TestRestTemplate restTemplate;
 
-    @LocalServerPort
-    private int serverPort;
+    
 
     @Test
     void testThatJeepsAreReturnedWhenAValidModelAndTrimAreSupplied() {

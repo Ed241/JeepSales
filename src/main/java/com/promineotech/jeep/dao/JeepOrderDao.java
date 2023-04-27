@@ -6,9 +6,6 @@ package com.promineotech.jeep.dao;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
-import org.hibernate.validator.constraints.Length;
 import com.promineotech.jeep.entity.Color;
 import com.promineotech.jeep.entity.Customer;
 import com.promineotech.jeep.entity.Engine;
@@ -16,7 +13,6 @@ import com.promineotech.jeep.entity.Jeep;
 import com.promineotech.jeep.entity.JeepModel;
 import com.promineotech.jeep.entity.Option;
 import com.promineotech.jeep.entity.Order;
-import com.promineotech.jeep.entity.OrderRequest;
 import com.promineotech.jeep.entity.Tire;
 
 /**
